@@ -9,6 +9,7 @@ import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
+import { Image } from "astro:assets";
 
 const posts = await getCollection("blog");
 
@@ -31,108 +32,151 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       height="450"></iframe>
   </div>
 
-  <main id="main-content">
-    <section id="hero">
-      <h1>TripoSR</h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-        <span class="sr-only">RSS Feed</span>
-      </a>
+  <section class="flex justify-center items-center space-x-4 py-8">
+    <div>
+      <img
+        src="https://github.com/VAST-AI-Research/TripoSR/blob/main/figures/teaser800.gif?raw=true"
+        alt="Input Image"
+        class="w-94 h-64 object-cover rounded-lg shadow-lg"
+      />
+      <p class="text-center mt-2">Input Image</p>
+    </div>
+    <div>
+      <img
+        src="https://github.com/3DTopia/OpenLRM/blob/main/assets/rendered_video/teaser.gif?raw=true"
+        alt="3D Reconstruction"
+        class="w-84 h-64 object-cover rounded-lg shadow-lg"
+      />
+      <p class="text-center mt-2">3D Reconstruction</p>
+    </div>
+  </section>
 
-      <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
-      </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
-    </section>
+  <section class="bg-white text-zinc-900 py-8 sm:py-16">
+    <div class="max-w-screen-xl mx-auto px-6 lg:px-16">
+      <div class="mb-8">
+        <h2 class="text-4xl font-bold">Frequently Asked Questions</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h3 class="text-lg font-medium text-zinc-800">What is TripoSR?</h3>
+          <p class="text-base text-zinc-500">
+            TripoSR is a state-of-the-art, open-source model for fast 3D
+            reconstruction from a single image, collaboratively developed by
+            Tripo AI and Stability AI[1][4].
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium text-zinc-800">
+            How does TripoSR work?
+          </h3>
+          <p class="text-base text-zinc-500">
+            TripoSR generates a mesh from a given image by processing the image
+            as a NumPy array and then returning a tuple containing the
+            preprocessed image and the name of the generated mesh file[2].
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium text-zinc-800">
+            Can I improve the texture resolution in TripoSR?
+          </h3>
+          <p class="text-base text-zinc-500">
+            Yes, texture resolution improvements are possible. Users have
+            discussed modifying the color sampling code to enhance texture
+            quality, which has shown to be effective[3].
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium text-zinc-800">
+            Is TripoSR compatible with ComfyUI?
+          </h3>
+          <p class="text-base text-zinc-500">
+            There have been efforts to integrate TripoSR with ComfyUI, including
+            the creation of a custom node for ComfyUI to experiment with
+            TripoSR. However, users have reported issues with dependencies and
+            errors during integration[1][3].
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium text-zinc-800">
+            Are there any scripts available to increase texture resolution in
+            TripoSR?
+          </h3>
+          <p class="text-base text-zinc-500">
+            Yes, there are scripts available that aim to increase the texture
+            resolution of the meshes generated by TripoSR. These scripts can be
+            found on GitHub and have been shared by the community[3].
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium text-zinc-800">
+            How can I get started with TripoSR?
+          </h3>
+          <p class="text-base text-zinc-500">
+            To get started with TripoSR, you can visit the official GitHub
+            repository for documentation and code examples. This will provide
+            you with the necessary information to begin experimenting with 3D
+            mesh generation from images[1][2].
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <Hr />
+  <Hr />
 
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
+  {
+    featuredPosts.length > 0 && (
+      <>
+        <section id="featured">
+          <h2>TripoSR</h2>
+          <ul>
+            {featuredPosts.map(({ data, slug }) => (
+              <Card
+                href={`/posts/${slug}/`}
+                frontmatter={data}
+                secHeading={false}
+              />
+            ))}
+          </ul>
+        </section>
+        {recentPosts.length > 0 && <Hr />}
+      </>
+    )
+  }
+
+  {
+    recentPosts.length > 0 && (
+      <section id="recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+          {recentPosts.map(
+            ({ data, slug }, index) =>
+              index < 4 && (
                 <Card
                   href={`/posts/${slug}/`}
                   frontmatter={data}
                   secHeading={false}
                 />
-              ))}
-            </ul>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
-      )
-    }
+              )
+          )}
+        </ul>
+      </section>
+    )
+  }
 
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts">
-          <h2>Recent Posts</h2>
-          <ul>
-            {recentPosts.map(
-              ({ data, slug }, index) =>
-                index < 4 && (
-                  <Card
-                    href={`/posts/${slug}/`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )}
-          </ul>
-        </section>
-      )
-    }
-
-    <div class="all-posts-btn-wrapper">
-      <LinkButton href="/posts/">
-        All Posts
-        <svg xmlns="http://www.w3.org/2000/svg"
-          ><path
-            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-          ></path>
-        </svg>
-      </LinkButton>
-    </div>
-  </main>
-
-  <Footer />
+  <div class="all-posts-btn-wrapper">
+    <LinkButton href="/posts/">
+      All Posts
+      <svg xmlns="http://www.w3.org/2000/svg"
+        ><path
+          d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+        ></path>
+      </svg>
+    </LinkButton>
+  </div>
 </Layout>
+
+<Footer />
 
 <style>
   /* ===== Hero Section ===== */
