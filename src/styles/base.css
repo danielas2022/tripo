@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.original-iframe-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 100vh; /* 设置容器高度，以便垂直居中 */
+}
+
+.original-iframe {
+  /* 删除边框 */
+  border: none;
+  /* 设置宽度 */
+  width: 80%;
+  /* 设置高度 */
+  height: 100vh;
+}
+
+
+
 @layer base {
   :root,
   html[data-theme="light"] {

@@ -22,15 +22,18 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <Layout>
   <Header />
 
-  <iframe
-    src="https://stabilityai-triposr.hf.space"
-    frameborder="0"
-    width="850"
-    height="450"></iframe>
+  <div class="original-iframe-container">
+    <iframe
+      class="original-iframe"
+      src="https://stabilityai-triposr.hf.space"
+      frameborder="0"
+      width="850"
+      height="450"></iframe>
+  </div>
 
   <main id="main-content">
     <section id="hero">
-      <h1>Mingalaba</h1>
+      <h1>TripoSR</h1>
       <a
         target="_blank"
         href="/rss.xml"
