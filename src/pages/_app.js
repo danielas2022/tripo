@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
       {/* 引入 Google Analytics */}
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${YOUR_MEASUREMENT_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${G - LNP93QDFE6}`}
       />
 
       {/* Google Analytics 初始化 */}
@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${YOUR_MEASUREMENT_ID}');
+          gtag('config', '${G - LNP93QDFE6}');
         `}
       </Script>
 
