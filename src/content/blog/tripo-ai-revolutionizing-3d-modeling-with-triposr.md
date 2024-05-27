@@ -1,7 +1,7 @@
 ---
 author: Sat Naing
 pubDatetime: 2024-05-24T09:30:41.816Z
-title: Tripo AI: Tripo AI:Revolutionizing 3D Modeling with TripoSR
+title: Tripo AI:Tripo AI:Revolutionizing 3D Modeling with TripoSR
 slug: "tripo-ai-revolutionizing-3d-modeling-with-triposr"
 featured: true
 ogImage: ../../assets/images/AstroPaper-v4.png
