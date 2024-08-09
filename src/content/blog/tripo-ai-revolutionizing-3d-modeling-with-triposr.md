@@ -12,7 +12,6 @@ tags:
 description: "Tripo AI: Revolutionizing 3D Modeling with TripoSR: ensuring a smoother and more feature-rich blogging experience."
 ---
 
-```markdown
 # Tripo AI: Revolutionizing 3D Modeling with TripoSR
 
 In the rapidly evolving field of artificial intelligence, Stability AI and Tripo AI have introduced a groundbreaking tool that is set to revolutionize 3D modeling. TripoSR, their latest innovation, is an AI model capable of generating high-quality 3D models from a single image in under a second. This blog post delves into the features, applications, and technical advancements of TripoSR, highlighting its potential to transform various industries.
@@ -111,6 +110,7 @@ Join us on this exciting journey towards a future where 3D modeling knows no bou
 - [TripoSR - Create 3D Models from a Single Image](https://gamefromscratch.com/triposr-create-3d-models-from-a-single-image/)
 - [VAST-AI-Research/TripoSR - GitHub](https://github.com/VAST-AI-Research/TripoSR)
 - [Stability AI and Tripo AI release image-to-3D AI model TripoSR](https://www.cgchannel.com/2024/03/stability-ai-and-tripo-ai-release-image-to-3d-ai-model-triposr/)
+
 ```
 
 Citations:
@@ -134,3 +134,4 @@ Citations:
 [18] https://docs.astro.build/en/tutorial/2-pages/2/
 [19] https://www.cgchannel.com/2024/03/stability-ai-and-tripo-ai-release-image-to-3d-ai-model-triposr/
 [20] https://support.microsoft.com/en-us/office/use-markdown-formatting-in-microsoft-teams-4d10bd65-55e2-4b2d-a1f3-2bebdcd2c772
+```
