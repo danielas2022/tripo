@@ -41,7 +41,7 @@ At the heart of TripoSR lies a sophisticated algorithm that leverages the power 
 
 To dive deeper into the technical aspects of TripoSR's algorithm, watch this explanatory video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ALGORITHM_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9eKmzpaPyXs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The process begins with the input of a 2D image, which is then analyzed by a series of convolutional neural networks (CNNs). These networks are trained on vast datasets of 2D images and their corresponding 3D models, allowing them to learn the complex relationships between 2D visual features and 3D structures.
 
@@ -107,7 +107,7 @@ In the early stages of product development, rapid visualization of ideas is cruc
 
 See TripoSR in action during the concept design phase:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CONCEPT_DESIGN_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yDqoneEpvgY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 3. **Early Stakeholder Feedback**: With the ability to quickly produce 3D models, designers can present more refined concepts to stakeholders earlier in the process. This facilitates better communication and allows for earlier decision-making.
 
