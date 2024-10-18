@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
       {/* 引入 Google Analytics */}
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${G - LNP93QDFE6}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-LNP93QDFE6`}
       />
 
       {/* Google Analytics 初始化 */}
@@ -34,26 +34,7 @@ function MyApp({ Component, pageProps }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
-          gtag('config', '${G - LNP93QDFE6}');
-        `}
-      </Script>
-
-      {/* 添加您提供的 Google Analytics 代码 */}
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-LNP93QDFE6"
-        strategy="lazyOnload"
-      />
-      <Script id="additional-ga-script" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-        
-          gtag("config", "G-LNP93QDFE6");
+          gtag('config', 'G-LNP93QDFE6');
         `}
       </Script>
 
