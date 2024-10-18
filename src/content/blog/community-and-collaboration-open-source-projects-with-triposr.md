@@ -1,7 +1,7 @@
 ---
 author: Sat Naing
-pubDatetime: 2024-04-28T04:59:04.866Z
-title: Community and Collaboration:Open Source Projects with TripoSR
+pubDatetime: 2024-04-29T04:59:04.866Z
+title: "Community and Collaboration:Open Source Projects with TripoSR"
 slug: community-and-collaboration-open-source-projects-with-triposr
 featured: false
 draft: false
@@ -9,7 +9,7 @@ tags:
   - Highlighting major open-source projects using TripoSR
   - How to contribute to the TripoSR community
   - Benefits of open-source collaboration
-description: Highlighting major open-source projects using TripoSR, how to contribute to the TripoSR community, and the benefits of open-source collaboration.
+description: "Highlighting major open-source projects using TripoSR, how to contribute to the TripoSR community, and the benefits of open-source collaboration."
 ---
 
 # Community and Collaboration: Open Source Projects with TripoSR
