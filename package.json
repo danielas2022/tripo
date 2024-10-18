@@ -61,6 +61,7 @@
     ]
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.0.0"
+    "@rollup/rollup-linux-x64-gnu": "^4.0.0",
+    "@resvg/resvg-js-linux-x64-gnu": "^2.6.0"
   }
 }
